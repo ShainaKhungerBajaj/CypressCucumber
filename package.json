@@ -1,0 +1,41 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Cypress Cucumber Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Ecommerce-tests-headed-chrome": "cypress run --headed --browser chrome --spec 'cypress/e2e/Ecommerce.feature'",
+    "Ecommerce-test-headed": "cypress run -e TAGS=\"@Ecommerce\" --headed",
+    "Ecommerce-tests-headless": "cypress run -e TAGS=\"@Ecommerce\"",
+    "regression-pack-headed": "cypress run -e TAGS=\"@regression and not @smoke\" --headed",
+    "smoke-pack-headed": "cypress run -e TAGS=\"@smoke\" --headed"
+  },
+  "author": "Shaina Khunger",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.2.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.14.0",
+    "cypress-xpath": "^2.0.1",
+    "faker": "^5.5.3",
+    "multiple-cucumber-html-reporter": "^3.4.0",
+    "ts-loader": "^9.4.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.js",
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-html/cucumber-report.html"
+    },
+    "message": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-ndjson/cucumber-report.ndjson"
+    },
+    "json": {
+      "enabled": true,
+      "formatter": "cucumber-json-formatter",
+      "output": "cypress/reports/cucumber-json/cucumber-report.json"
+    }
+  }
+}

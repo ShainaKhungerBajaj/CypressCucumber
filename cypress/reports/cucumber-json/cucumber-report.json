@@ -1,0 +1,111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "end-to-end-ecommerce-validation;invalid-login-credentials-for-negative-testing",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Invalid Login credentials for Negative Testing",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "Open the Ecommerce Page",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6665000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Click on login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 888000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "Fill the Invalid Email address",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 581000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Fill the Invalid Password",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Click on Login button",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ecommerce",
+            "line": 2
+          },
+          {
+            "name": "@regression",
+            "line": 2
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "end-to-end-ecommerce-validation",
+    "line": 4,
+    "keyword": "Feature",
+    "name": "End to End Ecommerce Validation",
+    "tags": [
+      {
+        "name": "@Ecommerce",
+        "line": 2
+      },
+      {
+        "name": "@regression",
+        "line": 2
+      }
+    ],
+    "uri": "cypress\\e2e\\Ecommerce.feature"
+  }
+]
